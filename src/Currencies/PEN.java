@@ -1,14 +1,12 @@
 package Currencies;
-import PEN.ConvertPENtoEUR;
-import PEN.ConvertPENtoUSD;
-import PEN.ConvertPENtoYEN;
+import PEN.*;
 
 public class PEN extends Currency{
-	
 	public PEN() {
 		dolar= new ConvertPENtoUSD();
 		yen= new ConvertPENtoYEN();
 		eur=new ConvertPENtoEUR();
-		
+		gbp=new ConvertPENtoGBP();
+		krw=new ConvertPENtoKRW();
 	}
 }

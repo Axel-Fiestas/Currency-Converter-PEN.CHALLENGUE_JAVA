@@ -1,4 +1,6 @@
-package Converts;
+package YEN;
+
+import Converts.ConvertToUSD;
 
 public class ConvertYENtoUSD implements ConvertToUSD {
 	@Override

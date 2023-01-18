@@ -1,9 +1,5 @@
 package Currencies;
-import Converts.ConvertToEUR;
-import Converts.ConvertToGBP;
-import Converts.ConvertToPEN;
-import Converts.ConvertToUSD;
-import Converts.ConvertToYEN;
+import Converts.*;
 
 public abstract class Currency {
 	
@@ -12,6 +8,7 @@ public abstract class Currency {
 	protected ConvertToPEN pen;
 	protected ConvertToEUR eur;
 	protected ConvertToGBP gbp;
+	protected ConvertToKRW krw;
 	
 	public double convertUSDPerformance(double quantity) {
 		try{
@@ -19,7 +16,6 @@ public abstract class Currency {
 		}catch(NullPointerException ex) {
 			return quantity;
 		}
-		
 	}
 	
 	public double convertYENPerformance(double quantity) {
@@ -28,7 +24,6 @@ public abstract class Currency {
 		}catch(NullPointerException ex) {
 			return quantity;
 		}
-		
 	}
 	
 	public double convertPENPerformance(double quantity) {
@@ -37,7 +32,6 @@ public abstract class Currency {
 		}catch(NullPointerException ex) {
 			return quantity;
 		}
-		
 	}
 	
 	public double convertEURPerformance(double quantity) {
@@ -51,6 +45,14 @@ public abstract class Currency {
 	public double convertGBPPerformance(double quantity) {
 		try {
 			return gbp.convert(quantity);
+		}catch(NullPointerException ex) {
+			return quantity;
+		}
+	}
+	
+	public double convertKRWPerfomance(double quantity) {
+		try {
+			return krw.convert(quantity);
 		}catch(NullPointerException ex) {
 			return quantity;
 		}

@@ -1,16 +1,25 @@
 package Test;
 import Currencies.Currency;
-import Currencies.PEN;
+import Currencies.*;
 
 public class TestConverter {
 	public static void main(String[] args) {
 		Currency example=new PEN();
 		
-		System.out.println(example.convertUSDPerformance(89));
+		System.out.println("The following Prices are converts of PEN with others Currencies: ");
+		System.out.println("The cash is: 100 soles");
 		
-		System.out.println(example.convertPENPerformance(89));
-			
+		System.out.println("In dollars: "+example.convertUSDPerformance(100));
+		System.out.println("In Yens: "+example.convertYENPerformance(100));
+		System.out.println("In Euros: "+example.convertEURPerformance(100));
+		System.out.println("In Pound sterlings: "+example.convertGBPPerformance(100));
+		System.out.println("In South Korean Wons: "+example.convertKRWPerfomance(100));
+		
+		
+		Currency example2=new EUR();
+		System.out.println(example2.convertPENPerformance(1500));
 	}
+	
 	
 	
 }
