@@ -16,10 +16,7 @@ public class TestConverter {
 		System.out.println("In South Korean Wons: "+example.convertKRWPerfomance(100));
 		
 		
-		Currency example2=new EUR();
-		System.out.println(example2.convertPENPerformance(1500));
 	}
-	
 	
 	
 }
