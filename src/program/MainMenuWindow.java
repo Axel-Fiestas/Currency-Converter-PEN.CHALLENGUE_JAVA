@@ -2,12 +2,6 @@ package program;
 
 import javax.swing.*;
 
-import java.awt.Color;
-import java.awt.FlowLayout;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.event.*;    
-
 public class MainMenuWindow{
 	
 
@@ -25,8 +19,7 @@ public class MainMenuWindow{
 	     if(electedOption!=null) {
 	 	 	switch(electedOption){
 	 			case "Conversor de moneda":
-	 				System.out.println("Elegiste un conversor de monedas");
-	 				InputWindowQuantity myWindown= new InputWindowQuantity();
+	 				new InputWindowQuantity();
 	 				break;
 	 			case "Conversor de temperatura":
 	 				System.out.println("Elegiste un conversor de temperatura");

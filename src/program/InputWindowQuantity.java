@@ -2,8 +2,6 @@ package program;
 
 import javax.swing.*;
 
-import mainProgram.JOptionPanel;
-
 public class InputWindowQuantity {
 	
 	
@@ -19,7 +17,7 @@ public class InputWindowQuantity {
         	}catch(Exception ex) {
         		JOptionPane.showMessageDialog(null,
         			    "Valor  no válido.",
-        			    "Inane error",
+        			    "Error",
         			    JOptionPane.ERROR_MESSAGE);
         	}
         }	

@@ -139,7 +139,6 @@ public class CurrencyConvertSystem {
 		return newValue;
 	}
 	
-	
 	public String getNameOfElectedCurrent(String electedOption) {
 	
 		String nameCurrency="Dinero";
