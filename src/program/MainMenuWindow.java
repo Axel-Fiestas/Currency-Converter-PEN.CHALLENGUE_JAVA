@@ -22,7 +22,7 @@ public class MainMenuWindow{
 	 				new InputWindowQuantity();
 	 				break;
 	 			case "Conversor de temperatura":
-	 				System.out.println("Elegiste un conversor de temperatura");
+	 				new InputTemperatureQuantity();
 	 				break;
 	 		}
 	     }

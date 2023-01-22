@@ -1,19 +1,16 @@
 package program;
 
-import javax.swing.*;
- 
-public class InputWindowQuantity {
+import javax.swing.JOptionPane;
+
+public class InputTemperatureQuantity {
 	
-	
-	public InputWindowQuantity() {
-			 
-		
-        String inputNumber = JOptionPane.showInputDialog("Ingrese la cantidad de dinero que desea convertir", 0);
+	public InputTemperatureQuantity(){
+        String inputNumber = JOptionPane.showInputDialog("Ingrese la cantidad de temperatura que desea convertir", 0);
         
         if(inputNumber!=null) {
         	try{
         		double number= Double.parseDouble(inputNumber);
-        		new ElectionWindowCurrency(number);
+        		new ElectionTemperatureDegrees(number);
         	}catch(Exception ex) {
         		JOptionPane.showMessageDialog(null,
         			    "Valor  no válido.",
